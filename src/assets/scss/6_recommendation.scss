@@ -1,0 +1,33 @@
+.recommendation {
+    padding: 0 0 60px;
+}
+.recommendation__box {
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    gap: 20px;
+}
+.recommendation__left {
+    display: flex;
+    height: 100%;
+}
+.recommendation__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.recommendation__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recommendation__inner {
+    background-color: $btnColor;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
