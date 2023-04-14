@@ -27,5 +27,17 @@ $mainColor : #69a2cd;
 $btnColor : #00a79d;
 
 @mixin btn {
-
+    font-size: 20px;
+    background-color: $btnColor;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .3s;
+    &:hover {
+        color: $btnColor;
+        background-color: #fff;
+        border: 1px solid $btnColor;
+    }
 }
