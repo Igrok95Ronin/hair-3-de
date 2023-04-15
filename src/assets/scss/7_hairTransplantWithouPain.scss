@@ -1,0 +1,31 @@
+.hairTransplantWithoutPain {
+    padding: 0 0 60px;
+}
+.hairTransplantWithoutPain__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.hairTransplantWithoutPain__left {
+}
+.hairTransplantWithoutPain__title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hairTransplantWithoutPain__txt {
+    font-size: 25px;
+    line-height: 35px;
+}
+.hairTransplantWithoutPain__right {
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.hairTransplantWithoutPain__img {
+
+}
