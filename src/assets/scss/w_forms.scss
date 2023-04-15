@@ -1,0 +1,16 @@
+.forms {
+    padding:  0 0 30px;
+}
+.forms__box {
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+    padding: 40px 100px;
+    border-radius: 10px;
+}
+.forms__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.forms__button {
+    @include btn;
+    border-radius: 5px;
+}
