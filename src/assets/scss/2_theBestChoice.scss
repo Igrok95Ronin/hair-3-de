@@ -19,7 +19,7 @@
 }
 .theBestChoice__title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(25px,5vw,32px);
 }
 .theBestChoice__dscr {
     line-height: 25px;

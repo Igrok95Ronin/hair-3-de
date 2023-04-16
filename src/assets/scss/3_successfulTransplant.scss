@@ -17,7 +17,7 @@
 }
 .successfulTransplant__title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(25px,5vw,32px);
 }
 .successfulTransplant__ul {
     font-size: 18px;
