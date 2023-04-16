@@ -1,11 +1,11 @@
 <?php
-$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
+$site_data      = json_decode(file_get_contents('http://local.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Haar Experte'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -37,7 +37,7 @@ $title = $text . ' ' . $city;
                         <div class="header__right">
                             <div class="header__h1Wrap">
                                 <img class="header__hirImg" src="assets/icons/hair.svg" alt="" >
-                                <h1 class="header__title">Haar Experte</h1>
+                                <h1 class="header__title"><?= $title ?></h1>
                             </div>
                             <div class="header__priceWrap">
                                 <h2 class="header__price">Top Angebot ab 1990 €</h2>
@@ -236,7 +236,7 @@ $title = $text . ' ' . $city;
         <section class='btnFixed'>
             <div class="btnFixed__box">
                 <div class="btnFixed__tel__Wrap">
-                    <a class="btnFixed__tel" href="#" >
+                    <a class="btnFixed__tel" href="<?= $phone_href ?>" >
                         <img class="btnFixed__imgT" src="assets/icons/telephone-fill.svg" alt="" >
                     </a>
                 </div>
