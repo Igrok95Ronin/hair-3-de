@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr .5fr;
     gap: 20px;
+    border-bottom: 5px solid $btnColor;
 }
 .successfulTransplant__left {
     display: flex;
